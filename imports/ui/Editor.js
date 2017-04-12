@@ -7,16 +7,19 @@ import {Session} from 'meteor/session';
 import {Notes} from '/imports/api/notes';
 import {Meteor} from 'meteor/meteor';
 export class Editor extends Component {
+
     handleBodyChange(e) {
         this.props.call('notes.update', this.props.note._id, {
            body: e.target.value
         });
     }
+
     handleTitleChange(e) {
         this.props.call('notes.update', this.props.note._id, {
             title: e.target.value
         });
     }
+
     render() {
         if (this.props.note) {
             return (
