@@ -31,7 +31,7 @@ export class NoteList extends React.Component {
         )
     }
 }
-;
+
 NoteList.propTypes = {
     notes: React.PropTypes.array.isRequired
 };
