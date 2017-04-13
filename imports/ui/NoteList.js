@@ -26,7 +26,6 @@ export class NoteList extends React.Component {
             <div className="item-list">
                 <NoteListHeader/>
                 {this.renderItems()}
-                NoteList { this.props.notes.length }
             </div>
         )
     }
