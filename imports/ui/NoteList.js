@@ -23,7 +23,7 @@ export class NoteList extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="item-list">
                 <NoteListHeader/>
                 {this.renderItems()}
                 NoteList { this.props.notes.length }
