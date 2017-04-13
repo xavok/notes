@@ -17,6 +17,7 @@
   bottom: 0;
   width:100vw;
   transition: left .3s ease;
+  z-index: 1;
   @include desktop {
     display: flex;
     position: static;
